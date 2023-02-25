@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700&display=swap'); -->
+    <!-- font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif; -->
+    <script>
+        tailwind.config={
+            theme : {
+                fontFamily :{
+                    sans : ["Merriweather , sans-serif"],
+                    mono : ["Montserrat , sans-serif"]
+                } 
+            }
+        }
+    </script>
+    <style>
+        *,*::after,*::before{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="flex items-center justify-center min-h-screen bg-[#173f3f]">
+        <!-- Form Wrapper -->
+        <div class="flex m-20 space-y-10 md:space-y-0  justify-center relative rounded-xl shadow-2xl shadow-gray-600 md:flex-row">
+            <!-- Left Side -->
+            <div class="flex flex-col   bg-white py-10 px-20 rounded-t-xl rounded-b-xl md:rounded-r-none md:rounded-l-xl md:px-16 min-w-[240px] max-w-[990px]">
+                <!-- Top Content -->
+                <h1 class="text-5xl font-bold font-mono mb-10">Log In</h1>
+                <p class="mx-w-sm font-sans text-xl tracking-wide font-light text-gray-600 mb-8 md:mb-20">Login to your account to upload , download pictures, videos and music.</p>
+
+                <input type="text" class="w-full py-4 px-2 mb-6 border text-2xl border-gray-500 rounded-md placeholder:font-mono shadow-lg shadow-white-500 placeholder:font-light outline-1 outline-cyan-600 " placeholder="Enter Your Email Address">
+
+                <!-- Middle Content -->
+                <div class="flex flex-col items-center justify-center md:flex-row justify-between mt-10">
+                    <span class="text-lg text-gray-400 block text-xl mb-5 tracking-wide">
+                        Forgot Password?
+                    </span>
+
+                    <button class="py-4 px-6 w-full bg-cyan-800 rounded-xl flex flex-row text-center items-center justify-center space-x-4 md:w-auto shadow-sm shadow-gray-500 hover:opacity-70 hover:-translate-y-1 transition duration-180 hover:border hover:border-cyan-700 outline-0">
+                        <span class="text-white tracking-wide text-3xl">Next</span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right text-white" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                          </svg>
+                    </button>
+                </div>
+                <!-- Border-->
+                <div class="border border-b-gray-300 mt-16 flex items-center justify-center"></div>
+
+                <!-- Bottom Content  -->
+                <span class="flex items-center justify-center text-2xl mt-6 mb-6 tracking-wide text-gray-400">Or login with </span>
+                <!-- Buttons -->
+                <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-4 ">
+                    
+                    <button class="flex items-center justify-center space-x-3 w-full border border-gray-500 py-3 px-16 rounded-md shadow-md shadow-white-800 md:w-auto">
+                        <img src="/google.png" class="w-10" alt="">
+                        <span class="text-2xl">Google</span>
+                    </button>
+                    <button class="flex items-center justify-center space-x-3 w-full border border-gray-500 py-3 px-16 rounded-md shadow-md shadow-white-800 md:w-auto">
+                        <img src="/facebook.png" class="w-10" alt="">
+                        <span class="text-2xl">Google</span>
+                    </button>
+                </div>
+
+            </div>
+            <!-- Form Image -->
+                <img src="/image.jpg" class="w-[380px] rounded-t-none md:rounded-r-xl hidden md:block" alt="">
+        </div>
+    </div>
+</body>
+</html>
